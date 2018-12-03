@@ -1,0 +1,43 @@
+<particles [style]="myStyle" [width]="width" [height]="height" [params]="myParams"></particles>
+<mat-card class="example-card bgf">
+    <mat-card-header>
+
+      <mat-card-title>Passing data from Parent to Child.</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>Use @Input() decorator in the Child component.</p>
+        <p>This variable should contain, for example, text which will be passed from Parent.</p>
+        <p>In the square brackets [variable]="value" in Parent component pass data which you need to share.</p>
+    <app-parent></app-parent>
+    </mat-card-content>
+</mat-card>
+<br>
+<mat-card class="example-card bgf">
+    <mat-card-header>
+
+      <mat-card-title>Passing data from Child to Parent.</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>Use @Output and EventEmitter in the Child component.</p>
+        <p>Code example: @Output() messageEvent = new EventEmitter().</p>
+        <p>Create function which will send your message to the Parent component.</p>
+        <p>Code example: this.messageEvent.emit(this.YOUR_MESSAGE).</p>
+        <p>In Parent component inside child tag use (messageEvent)="recieveMessage($event)".</p>
+        <p>Do not forget to create function which will take and use data in the way you need.</p>
+    <app-parent-output></app-parent-output>
+    </mat-card-content>
+</mat-card>
+<br>
+<mat-card class="example-card bgf">
+    <mat-card-header>
+
+      <mat-card-title>From the Child to Parent</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>We will use @ViewChild() to pass data in this case.</p>
+        <p>Code example: @ViewChild(ChildViewCComponent) child.</p>
+        <p>Use the correct lifecycle hook to modify the data.</p>
+        <p>Here <a href="https://angular.io/guide/lifecycle-hooks" target="_blank">link</a> to see all lifecycle hooks.</p>
+    <app-parent-view-c></app-parent-view-c>
+    </mat-card-content>
+</mat-card>

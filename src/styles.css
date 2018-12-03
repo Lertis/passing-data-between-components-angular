@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.children-i {
+    width: 20em;
+    height: 10.05em;
+    background: #ddf6dd;
+}
+
+.children-o {
+    width: 20em;
+    height: 10.05em;
+    background: #ddf6dd;
+}
+
+.children {
+    width: 20em;
+    height: 8em;
+    background: #ddf6dd;
+}
+
+.po {
+    width: 30em;
+    height: 18.3em;
+    background: #a0a0e7;
+}
+
+.pi {
+    width: 25em;
+    height: 16em;
+    background: #a0a0e7;
+}
+
+.pc {
+    width: 25em;
+    height: 17.45em;
+    background: #a0a0e7;
+}
+
+h2 {
+    padding: 1em 0.5em;
+}
+
+h3 {
+    padding: 1em .5em .5em .5em;
+}
+
+p {
+    padding: 0 .5em;
+}
+
+.butS {
+    height: 2.3em;
+}
+
+.bgf {
+    background: #fffaf9;
+}
+
+.dbl {
+    display: inline-block;
+    margin: 0 30%;
+}
